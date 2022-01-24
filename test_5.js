@@ -14,6 +14,7 @@ const concatArrayTwo = [
 ];
 const concatArray = concatArrayOne.concat(concatArrayTwo);
 console.log(concatArray);
+
 // ? forEach(콜백함수(값));
 // * 배열을 loop 순회하고 싶을때 사용
 const forEachArray = [1, 2, 3, 4, 5, 6, 7, 8];
