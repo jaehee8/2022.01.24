@@ -1,3 +1,6 @@
+// ? concat() 배열과 배열을 합치고 싶을때
+// * 여러개의 배열을 한개의 배열로 합치고자 할때 concat() 메서드를 활용한다.
+// * slice 처럼 합친배열은 새로운 배열로 복사하는 것이 특징
 const concatArrayOne = [1, 2, 3, 4, 5, 6, 7, 8];
 const concatArrayTwo = [
   "하나",
