@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .display_flex {
+      display: flex;
+    }
+    .justify_con_center {
+      justify-content: center;
+    }
+    .justify_con_sp {
+      justify-content: space-between;
+    }
+    .al_items_center {
+      align-items: center;
+    }
+    .al_items_fl_end {
+      align-items: flex-end;
+    }
+
+    #container {
+      width: 100vw;
+      height: 100vh;
+      background-color: #eee;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      position: relative;
+    }
+    header {
+      width: 100%;
+      height: 10vh;
+      border: 1px solid red;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, .23);
+      position: fixed;
+      top: 0;
+    }
+    #head_wrap {
+      margin: 0 auto;
+      width: 80%;
+      height: 100%;
+      /* display: flex;
+      justify-content: space-between;
+      align-items: center; */
+    }
+    #logo {
+      font-size: 2rem;
+    }
+    #list_wrap {
+      /* display: flex; */
+
+    }
+    #list_wrap li {
+      display: block;
+      list-style: none;
+      margin: 2rem;
+      padding: .5rem 1rem;
+      border: 1px solid red;
+    }
+
+    #item_wrap {
+      width: 50vw;
+      height: 50vh;
+      border: 1px solid red;
+    }
+
+    #item_wrap div{
+      width: 15vw;
+      height: 30vh;
+      border: 1px solid red;
+    }
+
+    #backgronud_bax {
+      width: 100vw;
+      height: 100vh;
+      background-color: #222;
+      opacity: .5;
+      position: absolute;
+      top: 0;
+    }
+    #box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 20vw;
+      height: 30vh;
+      border: 2px solid #222;
+      background-color: #fff;
+      opacity: 1;
+      z-index: 10;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container" class="display_flex justify_con_center al_items_center">
+    <header>
+      <div id="head_wrap" class="display_flex justify_con_sp al_items_center">
+        <div id="logo">logo</div>
+        <nav>
+          <ul id="list_wrap" class="display_flex">
+            <li>list-1</li>
+            <li>list-2</li>
+            <li>list-3</li>
+            <li>list-4</li>
+            <li>list-5</li>
+          </ul>
+        </nav>
+      </div>
+      
+    </header>
+    <div id="item_wrap" class="display_flex justify_con_sp al_items_fl_end">
+      <div>item_1</div>
+      <div>item_2</div>
+      <div>item_3</div>
+    </div>
+  </div>
+  <div id="box_wrap">
+    <div id="backgronud_bax"></div>
+    <div id="box">
+      <h1>자바스크립트</h1>
+      <p>잘하고 싶어요!</p>
+    </div>
+  </div>
+</body>
+
+<script>
+  const backgronud_bax =document.querySelector('#backgronud_bax') 
+  console.dir(backgronud_bax);
+
+</script>
+</html>
