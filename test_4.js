@@ -17,6 +17,3 @@ const newArray = sliceArray.slice(3, 6);
 console.log(newArray);
 console.log(sliceArray);
 // * 접착(splice)과 헷갈리는 경향이 있으며, 주요한 것은 '새로운 배열'로 복사 시킨 다는 장점이 있다.
-// ? concat() 배열과 배열을 합치고 싶을때
-// * 여러개의 배열을 한개의 배열로 합치고자 할때 concat() 메서드를 활용한다.
-// * slice 처럼 합친배열은 새로운 배열로 복사하는 것이 특징
