@@ -9,3 +9,12 @@ const mapReturnArray = mapArray.map((value) => {
   // * 리턴한 값들을 mapReturnArray 라는 배열의 '원소'로 새롭게 생성되었다.
 });
 console.log(mapReturnArray);
+
+// ? filter(콜백함수(값))
+// * map과 매우 유사하며 특징은 콜백함수의 리턴이 불리언타입이어야하고, true인 원소만 새로 재배열하여 복사한다.
+const filterArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const filterReturnArray = filterArray.filter((value) => {
+  return value % 2 === 0;
+});
+console.log(filterReturnArray);
+// * 결과가 참인 원소들만 새로운 배열로 복사된 것을 확인 할 수 있다.
